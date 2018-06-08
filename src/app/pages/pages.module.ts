@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 import { PAGES_ROUTES } from './pages.routes';
 
@@ -14,7 +15,8 @@ import { Graphics1Component } from './graphics1/graphics1.component';
   imports: [
     CommonModule,
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    FormsModule
   ],
   declarations: [
     PagesComponent,
