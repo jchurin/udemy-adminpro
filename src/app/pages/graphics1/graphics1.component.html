@@ -1,3 +1,40 @@
-<p>
-  graphics1 works!
-</p>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graphics.grafico1.leyenda}}</h4>
+                <app-graphic [type]="graphics.grafico1.type" [labels]="graphics.grafico1.labels" [data]="graphics.grafico1.data" [legend]="graphics.grafico1.leyenda">
+                </app-graphic>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graphics.grafico2.leyenda}}</h4>
+                <app-graphic [type]="graphics.grafico2.type" [labels]="graphics.grafico2.labels" [data]="graphics.grafico2.data" [legend]="graphics.grafico2.leyenda">
+                </app-graphic>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graphics.grafico3.leyenda}}</h4>
+                <app-graphic [type]="graphics.grafico3.type" [labels]="graphics.grafico3.labels" [data]="graphics.grafico3.data" [legend]="graphics.grafico3.leyenda">
+                </app-graphic>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graphics.grafico4.leyenda}}</h4>
+                <app-graphic [type]="graphics.grafico4.type" [labels]="graphics.grafico4.labels" [data]="graphics.grafico4.data" [legend]="graphics.grafico4.leyenda">
+                </app-graphic>
+            </div>
+        </div>
+    </div>
+</div>

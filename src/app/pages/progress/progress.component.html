@@ -4,7 +4,11 @@
             <div class="card-body">
                 <h5 class="card-title">Progress bar</h5>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValuenow]="progress" aria-valuemin="0" aria-valuemax="100" [style.width]="progress + '%'"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValuenow]="progress1" aria-valuemin="0" aria-valuemax="100" [style.width]="progress1 + '%'"></div>
+                </div>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.ariaValuenow]="progress2" aria-valuemin="0" aria-valuemax="100" [style.width]="progress2 + '%'"></div>
                 </div>
             </div>
         </div>
@@ -14,28 +18,14 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-
-                <div class="input-group">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button" (click)="decrement()">
-                        <i class="mdi mdi-minus"></i>
-                      </button>
-                    </span>
-                    <input type="text" class="form-control" name="progress" [(ngModel)]="progress">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button" (click)="increment()">
-                          <i class="mdi mdi-plus"></i>
-                      </button>
-                    </span>
-                </div>
-
+                <app-incrementer legend="Progress azul" [progress]="progress1" (changeValue)="progress1 = $event"></app-incrementer>
             </div>
         </div>
     </div>
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                Text 2
+                <app-incrementer legend="Progress verde" [progress]="progress2" (changeValue)="progress2 = $event"></app-incrementer>
             </div>
         </div>
     </div>

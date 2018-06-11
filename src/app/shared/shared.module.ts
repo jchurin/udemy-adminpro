@@ -9,7 +9,7 @@ import { BreadcrumsComponent } from './breadcrums/breadcrums.component';
 
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule
   ],
   declarations: [
     NopagefoundComponent,
