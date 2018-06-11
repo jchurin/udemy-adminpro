@@ -13,6 +13,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graphics1Component } from './graphics1/graphics1.component';
 import { IncrementerComponent } from '../components/incrementer/incrementer.component';
 import { GraphicComponent } from '../components/graphic/graphic.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { GraphicComponent } from '../components/graphic/graphic.component';
     ProgressComponent,
     Graphics1Component,
     IncrementerComponent,
-    GraphicComponent
+    GraphicComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,
